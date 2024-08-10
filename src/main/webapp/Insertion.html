@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Insert title here</title>
+    <link rel="stylesheet" type="text/css" href="css/insertion.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Login Form</h1>
+            <form action="ServletClient" method="post">
+                <input type="number" name="id" placeholder="Enter id" required><br><br>
+                <input type="text" name="name" placeholder="Enter Full Name" required><br><br>
+                <input type="email" name="email" placeholder="Enter email" required><br><br>
+                <input type="password" name="password" placeholder="Password" required><br><br>
+                <input type="submit" value="Register"><br><br>
+                <a href="DataFetch" class="fetch-link">Fetch</a>
+            </form>
+        </div>
+        <div class="form-container">
+            <h2>Search User</h2>
+            <form action="SearchUserServlet" method="get">
+                <input type="text" name="name" placeholder="Search by Name" required><br><br>
+                <input type="submit" value="Search"><br><br>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
